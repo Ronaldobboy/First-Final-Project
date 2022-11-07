@@ -162,13 +162,10 @@ HEADER
     width: 40%;
 }
 
-.header__img--container {
-    ;
-}
-
 .header__img--wrapper {
     display: flex;
     justify-content: flex-end;
+    align-self: flex-end;
     width: 60%;
 }
 
