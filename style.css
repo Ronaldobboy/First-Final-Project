@@ -442,6 +442,11 @@ STEPS
     flex-shrink: 0;
 }
 
+.steps__img {
+    border-radius: 4px;
+    width: 100%;
+}
+
 .steps__description {
     width: 50%;
     margin-left: 64px;
