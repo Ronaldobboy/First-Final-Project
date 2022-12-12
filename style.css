@@ -35,6 +35,7 @@ nav {
 }
 
 img {
+    max-width: 100%;
     width: 100%;
     height: 100%;
     max-height: 50vh;
@@ -434,17 +435,22 @@ STEPS
 
 .steps__container {
     display: flex;
+    padding: 96px 0;
+    align-items: center;
 }
 
 .steps__img--container {
     width: 50%;
     border-radius: 4px;
     flex-shrink: 0;
+    height: 280px;
 }
 
 .steps__img {
     border-radius: 4px;
     width: 100%;
+    height: auto;
+    vertical-align: center;
 }
 
 .steps__description {
@@ -474,6 +480,7 @@ STEPS
     flex-direction: row;
     align-items: flex-start;
     margin-top: 32px;
+    height: 88px;
 }
 
 .step__number {
@@ -486,6 +493,8 @@ STEPS
 .step__description {
     margin-top: 0px;
     margin-left: 24px;
+    text-align: left;
+
 }
 
 .step__title {
@@ -503,3 +512,10 @@ STEPS
     line-height: 2;
     color: rgb(113 128 150 );
 }
+
+/*
+
+VALUES
+
+*/
+
