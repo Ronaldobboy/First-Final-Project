@@ -862,9 +862,20 @@ FOOTER
     position: relative;
 }
 
+.links{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: left;
+    margin-top: -48px;
+}
+
 .link {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    margin-top: 48px;
 }
 
 .link__title {
@@ -872,6 +883,7 @@ FOOTER
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: normal;
+    margin-bottom: 0px;
 }
 
 .link__list {
@@ -880,6 +892,7 @@ FOOTER
     font-weight: 500;
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
 }
 
 .footer__links--wrapper {
@@ -892,4 +905,8 @@ FOOTER
     padding-bottom: 0.25rem;
     transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
     transition-duration: 300ms;
+}
+
+.footer__divider {
+    margin: 6px;
 }
