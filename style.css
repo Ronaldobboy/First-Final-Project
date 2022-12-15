@@ -196,14 +196,18 @@ p {
     font-size: 18px;
     line-height: 1.25;
     margin: 32px 0;
+    width: 100%;
+    margin-top: 16px;
+    margin-bottom: 0;
+    font-weight: 500;
+    line-height: 1.625;
+    color: rgb(124 139 161);
 }
 
 .email {
     width: 100%;
     font-weight: 500;
-
 }
-
 
 .trusted__title {
     font-size: 12px;
@@ -270,6 +274,7 @@ FEATURES
 h5 {
     margin-bottom: 16px;
     letter-spacing: 1px;
+    color: rgb(100 21 255)
 }
 
 h2 {
@@ -287,6 +292,9 @@ h2 {
     margin-top: 16px;
     max-width: 576px;
     text-align: center;
+    font-weight: 500;
+    line-height: 1.625;
+    color: rgb(124 139 161);
 }
 
 .feature__wrapper {
@@ -323,6 +331,7 @@ h2 {
     border-color: transparent;
     height: 64px;
     padding: 20PX;
+    flex-shrink: 0;
 }
 
 .feature__img {
@@ -399,10 +408,12 @@ QUALITY
 }
 
 .quality__img--container {
-    width: 50%;
-    position: relative;
+        width: 50%;
     flex-shrink: 0;
     max-width: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .quality__img {
@@ -435,7 +446,6 @@ STEPS
 
 .steps__container {
     display: flex;
-    padding: 96px 0;
     align-items: center;
 }
 
@@ -762,7 +772,7 @@ PRICING
     align-items: center;
     border-top-width: 2px;
     border-bottom-width: 2px;
-
+    border-color: rgb(102 126 234);
     padding: 32px;
     margin-right: -32px;
     margin-left: -32px;
@@ -811,7 +821,9 @@ PRICING
     padding: 16px 32px;
     border-radius: 99px;
     color: white;
-    background: linear-gradient(115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100%);
+    background: linear-gradient(115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100%);   
+    cursor: pointer;
+
 }
 
 .plan__btn--red {
@@ -822,6 +834,7 @@ PRICING
     border-radius: 99px;
     color: white;
     background: linear-gradient(115deg, rgb(245, 101, 101) 0%, rgb(254, 178, 178) 100%);
+    cursor: pointer;
 }
 
 .plan__btn--white {
@@ -832,4 +845,51 @@ PRICING
     border-radius: 99px;
     color: rgb(100 21 255);
     background-color: rgb(247 250 252);
+    cursor: pointer;
+}
+
+/*
+
+FOOTER
+
+*/
+
+.footer__container {
+    padding: 96px 32px;
+    margin: 0 -32px -32px -32px;
+    color: rgb(247 250 252);
+    background-color: rgb(100 21 255);
+    position: relative;
+}
+
+.link {
+    display: flex;
+    flex-direction: column;
+}
+
+.link__title {
+    color: rgb(247 250 252);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: normal;
+}
+
+.link__list {
+    margin-top: 24px;
+    font-size: 14px;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__links--wrapper {
+    margin-top: 12px;
+}
+
+.footer__links {
+    border-bottom-width: 2px;
+    border-color: transparent;
+    padding-bottom: 0.25rem;
+    transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
+    transition-duration: 300ms;
 }
