@@ -130,7 +130,7 @@ li {
     margin-left: 0px;
     font-size: 24px ;
     font-weight: 800;
-    color: rgb(36 62 99)
+    color: rgb(36 62 99);
 }
 
 .nav__links {
@@ -142,7 +142,12 @@ li {
     font-size: 14px;
     font-weight: 600;
     letter-spacing: 1px;
-    color: rgb(36 62 99)
+    color: rgb(36 62 99);
+}
+
+.nav__link:hover {
+    color: rgb(100 21 255);
+    text-decoration: underline;
 }
 
 .purple-link {
@@ -941,7 +946,7 @@ FOOTER
 }
 
 .footer__logo--title {
-    width: 100%;
+    width: 150px;
     margin-bottom: 0px;
     margin-left: 8px;
     font-size: 20px;
